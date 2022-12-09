@@ -6,8 +6,8 @@ game = 'What is the result of the expression?'
 
 def function():
 
-    number1 = randint(0, 20)
-    number2 = randint(0, 20)
+    number1 = randint(0, 10)
+    number2 = randint(0, 10)
     a = f'{number1} + {number2}'
     a_answer = number1 + number2
     b = f'{number1} - {number2}'
