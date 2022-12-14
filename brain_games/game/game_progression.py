@@ -10,11 +10,7 @@ def function():
     progression = list(range(start, start + length * step, step))
 
     answer = choice(progression)
-    question = progression
-    for i in range(len(question)):
-        question[i] = str(question[i])
-
-    question = ' '.join(question)
-    question = question.replace(str(answer), '..')
-
+    question = ' '.join(
+        '..' if number == answer else str(number) for number in progression
+    )
     return str(answer), question
