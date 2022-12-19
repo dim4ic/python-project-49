@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
+description = "Give the correct answer to three questions in five games."
 authors = ["dim4ick <romanoff_d@mail.ru>"]
 readme = "README.md"
 packages = [
