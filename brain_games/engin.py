@@ -23,7 +23,7 @@ def run_game(name_game):
         elif my_answer != answer:
             print(
                 f'{my_answer} is wrong answer ;(. Correct answer was {answer}.')
-            print(f'Lets try again, {name}!')
+            print(f"Let's try again, {name}!")
             return
 
     print(f'Congratulations, {name}!')
