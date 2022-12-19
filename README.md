@@ -15,6 +15,6 @@ https://asciinema.org/a/cVkq2OSWIvbHFPA1X20NTVo9R
 https://asciinema.org/a/vlNkn66b6mwOBwJnJ8Fgsh0LJ
 
 ### brain-prime
-https://asciinema.org/a/dSbYDj4iA65HWVIXCe25Q8hXN
+<script id="asciicast-546789" src="https://asciinema.org/a/546789.js" async></script>
 
 
