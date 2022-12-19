@@ -14,14 +14,15 @@ def run_game(name_game):
     while counter <= 3:
         answer, question = name_game.function()
         print(f'Question: {question}')
-        user_answer = prompt.string('You answer: ')
+        my_answer = prompt.string('You answer: ')
 
-        if user_answer == answer:
+        if my_answer == answer:
             print('Correct!')
             counter = counter + 1
 
-        elif user_answer != answer:
-            print(f'{user_answer} is wrong answer ;(. Correct answer was {answer}.')
+        elif my_answer != answer:
+            print(
+                f'{my_answer} is wrong answer ;(. Correct answer was {answer}.')
             print(f'Lets try again, {name}!')
             return
 
