@@ -2,3 +2,9 @@
 
 .venv
 
+# служебные файлы Python не надо хранить в репозитории
+
+__pycache__
+brain_games/__pycache__/
+dist/
+
