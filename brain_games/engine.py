@@ -1,5 +1,7 @@
 import prompt
 
+NUMBER_OF_ROUND = 3
+
 
 def run_game(game):
 
@@ -10,18 +12,18 @@ def run_game(game):
 
     counter = 1
 
-    while counter <= 3:
-        answer, question = game.function()
+    while counter <= NUMBER_OF_ROUND:
+        correct_answer, question = game.make_game()
         print(f'Question: {question}')
-        my_answer = prompt.string('You answer: ')
+        answer = prompt.string('You answer: ')
 
-        if my_answer == answer:
+        if answer == correct_answer:
             print('Correct!')
-            counter = counter + 1
+            counter += 1
 
-        elif my_answer != answer:
-            print(
-                f'{my_answer} is wrong answer ;(. Correct answer was {answer}.')
+        else:
+            print(f"'{answer}' is wrong answer ;(. "
+                  f"Correct answer was '{correct_answer}'.")
             print(f"Let's try again, {name}!")
             return
 

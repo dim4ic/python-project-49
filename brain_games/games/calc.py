@@ -4,7 +4,7 @@ from random import randint
 THE_TASK = 'What is the result of the expression?'
 
 
-def function():
+def make_game():
 
     number1 = randint(0, 10)
     number2 = randint(0, 10)
@@ -19,10 +19,10 @@ def function():
     question = random.choice(list)
 
     if question == a:
-        answer = a_answer
+        correct_answer = a_answer
     elif question == b:
-        answer = b_answer
+        correct_answer = b_answer
     elif question == c:
-        answer = c_answer
+        correct_answer = c_answer
 
-    return str(answer), question
+    return str(correct_answer), question

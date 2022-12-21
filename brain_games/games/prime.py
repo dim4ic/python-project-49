@@ -3,7 +3,7 @@ from random import randint
 THE_TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def function():
+def make_game():
 
     question = randint(2, 30)
     count = 2
@@ -11,11 +11,11 @@ def function():
     while count <= question - 1:
 
         if question % count == 0:
-            answer = 'no'
+            correct_answer = 'no'
             break
         count += 1
 
     else:
-        answer = 'yes'
+        correct_answer = 'yes'
 
-    return str(answer), question
+    return str(correct_answer), question
