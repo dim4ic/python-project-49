@@ -1,7 +1,7 @@
 import random
 from random import randint
 
-game = 'What is the result of the expression?'
+THE_TASK = 'What is the result of the expression?'
 
 
 def function():

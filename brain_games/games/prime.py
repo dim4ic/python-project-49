@@ -1,6 +1,6 @@
 from random import randint
 
-game = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+THE_TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def function():

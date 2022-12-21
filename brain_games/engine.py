@@ -1,18 +1,17 @@
 import prompt
 
 
-def run_game(name_game):
+def run_game(game):
 
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
-    game = name_game.game
-    print(game)
+    print(game.THE_TASK)
 
     counter = 1
 
     while counter <= 3:
-        answer, question = name_game.function()
+        answer, question = game.function()
         print(f'Question: {question}')
         my_answer = prompt.string('You answer: ')
 
