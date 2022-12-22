@@ -4,13 +4,16 @@ from random import randint
 THE_TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
+def even(value):
+    return value % 2 == 0
+
+
 def make_game():
-
     question = randint(0, 20)
-    if question % 2 == 0:
-        correct_answer = 'yes'
 
-    elif question % 2 != 0:
+    if even(question):
+        correct_answer = 'yes'
+    else:
         correct_answer = 'no'
 
-    return correct_answer, question
+    return str(correct_answer), question
