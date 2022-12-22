@@ -1,28 +1,24 @@
-import random
-from random import randint
+from random import randint, choice
 
 THE_TASK = 'What is the result of the expression?'
 
 
-def make_game():
+def calculation(number1, number2, operator):
+    if operator == '+':
+        answer = number1 + number2
+    elif operator == '-':
+        answer = number1 - number2
+    elif operator == '*':
+        answer = number1 * number2
+    return answer
 
+
+def make_game():
+    list = ['+', '-', '*']
+    operator = choice(list)
     number1 = randint(0, 10)
     number2 = randint(0, 10)
-    a = f'{number1} + {number2}'
-    a_answer = number1 + number2
-    b = f'{number1} - {number2}'
-    b_answer = number1 - number2
-    c = f'{number1} * {number2}'
-    c_answer = number1 * number2
-
-    list = [a, b, c]
-    question = random.choice(list)
-
-    if question == a:
-        correct_answer = a_answer
-    elif question == b:
-        correct_answer = b_answer
-    elif question == c:
-        correct_answer = c_answer
+    correct_answer = calculation(number1, number2, operator)
+    question = f'{number1} {operator} {number2}'
 
     return str(correct_answer), question
