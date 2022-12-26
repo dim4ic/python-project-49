@@ -1,27 +1,21 @@
-from random import randint, choice
+from random import randint
 
-THE_TASK = 'What number is missing in the progression?'
+TASK = 'What number is missing in the progression?'
 
 
-def progression(start, length, step):
+def generate_progression(start, length, step):
     return list(range(start, start + length * step, step))
 
 
-def make_game():
+def make_round():
     length = randint(5, 10)
     start = randint(1, 5)
     step = randint(2, 5)
-    question = progression(start, length, step)
+    question = generate_progression(start, length, step)
 
-    correct_answer = choice(question)
-    index = 0
-    for number in question:
-        if number == correct_answer:
-            question[index] = '..'
-        else:
-            str(number)
-            index += 1
-
+    hidden_index = randint(0, len(question) - 1)
+    correct_answer = str(question[hidden_index])
+    question[hidden_index] = '..'
     question = ' '.join(str(i) for i in question)
 
-    return str(correct_answer), question
+    return str(correct_answer), str(question)

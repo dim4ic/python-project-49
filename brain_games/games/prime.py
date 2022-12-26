@@ -1,6 +1,6 @@
 from random import randint
 
-THE_TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(question):
@@ -11,11 +11,12 @@ def is_prime(question):
         if question % count == 0:
 
             return True
-            break
+
         count += 1
+    return False
 
 
-def make_game():
+def make_round():
 
     question = randint(2, 30)
     if is_prime(question):
@@ -23,4 +24,4 @@ def make_game():
     else:
         correct_answer = 'yes'
 
-    return str(correct_answer), question
+    return str(correct_answer), str(question)

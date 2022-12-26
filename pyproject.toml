@@ -2,6 +2,8 @@
 name = "hexlet-code"
 version = "0.1.0"
 description = "Give the correct answer to three questions in five games."
+repository = "https://github.com/dim4ic/python-project-49"
+classifiers = [ "Brain Games :: python :: 3.8.10" ]
 authors = ["dim4ick <romanoff_d@mail.ru>"]
 readme = "README.md"
 packages = [
