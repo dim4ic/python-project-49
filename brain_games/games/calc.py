@@ -1,6 +1,6 @@
 from random import randint, choice
 
-TASK = 'What is the result of the expression?'
+DESCRIPTION = 'What is the result of the expression?'
 
 
 def calculate(number1, number2, operator):
@@ -13,7 +13,7 @@ def calculate(number1, number2, operator):
     return answer
 
 
-def make_round():
+def generate_round():
     list = ['+', '-', '*']
     operator = choice(list)
     number1 = randint(0, 10)
@@ -21,4 +21,4 @@ def make_round():
     correct_answer = calculate(number1, number2, operator)
     question = f'{number1} {operator} {number2}'
 
-    return str(correct_answer), str(question)
+    return str(correct_answer), question
