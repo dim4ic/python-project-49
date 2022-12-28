@@ -5,7 +5,7 @@ DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def is_prime(question):
     if question < 2:
-        return is_prime(question)
+        return False
     count = 2
     while count <= question // 2:
         if question % count == 0:
